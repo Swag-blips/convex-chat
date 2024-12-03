@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+}
+
+.main-container {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100vw;
+}
+
+.header-text {
+  color: white;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  padding-right: 16px;
+  padding-left: 16px;
+  gap: 16px;
+  width: 100vw;
+}
+
+.form-label {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.login-input {
+  background-color: transparent;
+  outline: none;
+  height: 40px;
+  border: 1px solid #4d4d4d;
+  padding-left: 4px;
+  border-radius: 6px;
+  color: white;
+}
+
+.submit-button {
+  height: 32px;
+  outline: none;
+  border: none;
+}
+
+.chat-container {
+  margin-top: 24px;
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  padding-right: 16px;
+}
+/* .messages-container :last-child {
+  margin-bottom: 30px;
+} */
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.message-author {
+  color: white;
+  font-size: 13px;
+}
+.messages .mine {
+  margin-left: auto;
+  p {
+    text-align: right;
+  }
+}
+.messages .others {
+  margin-right: auto;
+}
+
+.message-box {
+  height: auto;
+  background-color: #3c3c3c;
+  max-width: 200px;
+  color: white;
+  padding: 8px 8px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.message-form {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  background-color: #1e1e1e;
+  width: inherit;
+}
+
+.message-input {
+  background-color: transparent;
+  outline: none;
+  height: 40px;
+  border: 1px solid #4d4d4d;
+  padding-left: 4px;
+  border-radius: 6px;
+  color: white;
+  width: 95%;
+}
+
+.last {
+  margin-bottom: 60px;
+}
