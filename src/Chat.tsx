@@ -67,7 +67,6 @@ const Chat = () => {
         {messages?.map((message, index) => (
           <Messages
             message={message}
-            index={index}
             key={message._id}
             isLast={index + 1 === messages.length}
             username={username}

@@ -1,11 +1,11 @@
 type Props = {
   message: any;
-  index: number;
+
   isLast: boolean;
   username: string | null;
 };
 
-const Messages = ({ message, index, isLast, username }: Props) => {
+const Messages = ({ message,  isLast, username }: Props) => {
   return (
     <div key={message._id} className={`messages ${isLast ? "last" : ""}`}>
       <article
