@@ -52,7 +52,7 @@ const Chat = () => {
     } else {
       return;
     }
-  });
+  }, [username]);
 
   useEffect(() => {
     scrollToBottom();
