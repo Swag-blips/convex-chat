@@ -29,6 +29,11 @@ const Chat = () => {
 
   const handleSendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+
+    if(!message.trim()){
+      return
+    }
     try {
       if (username) {
         await sendMessage({ username, message });
